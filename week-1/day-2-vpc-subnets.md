@@ -1,118 +1,23 @@
-# What makes a subnet public vs private?
+# Architecture Overview
 
-In Amazon VPC, a subnet is just a range of IPs.
+- Created a custom VPC (10.0.0.0/16)
+- Public subnet for internet-facing resources
+- Private subnet for internal resources
+- Internet Gateway attached to VPC
+- Route table configured for public subnet
 
-The key difference is NOT the subnet itself it’s the route table attached to it.
+## Key Learning
 
-## Public Subnet
+Even if a security group allows traffic, without a route to an Internet Gateway and a public IP, the instance is not reachable from the internet.
 
-A subnet is public if:
+## Challenge Faced
 
-* It has a route to an Internet Gateway (IGW)
+- Initial confusion accessing private instance directly
 
-* Example route:
-Destination: 0.0.0.0/0
-Target: IGW
+## Solution
 
-*This means:*
-
-Resources can reach the internet
-AND can potentially be reached from the internet
-
-## Private Subnet
-
-A subnet is private if:
-
-* It does NOT have a route to an IGW
-
-* Example:
-No 0.0.0.0/0 → IGW route
-
-*This means:*
-
-No direct internet access
-Used for databases, internal services, etc.
-
-* Simple analogy
-Public subnet = house with a road to the highway
-Private subnet = house inside a gated estate (no direct highway access)
-
-## What is an Internet Gateway (IGW)?
-
-Internet Gateway is:
-
-A bridge between your VPC and the internet
-
-*What it does:*
-Allows incoming traffic from the internet
-Allows outgoing traffic to the internet
-Without IGW:
-
-Even if your instance has a public IP…
-
-* It cannot reach the internet
-* The internet cannot reach it
-
-*Think of IGW as:*
-
-The main exit door of your VPC to the internet
-
-### Why does an EC2 instance need these?
-
-Let’s connect everything now.
-
-A) *Why Public IP?*
-
-Your Amazon EC2 instance needs a public IP because:
-
-* The internet needs a way to find your instance
-
-* Without public IP:
-Instance only has private IP (e.g., 10.0.1.5)
-That IP is not reachable from the internet
-
-*You can’t:*
-
-* SSH from your laptop
-* Access via browser
-
-* With public IP:
-Your instance is reachable from the internet
-
-B) *Why route to IGW?*
-
-Even with a public IP…
-
-* If there’s no route to IGW, traffic has nowhere to go.
-
-This is the key formula;
-
-* Internet access = Public IP + Route to IGW + Security Group rules
-
-* Miss ONE → ❌ no access
-
-## Full picture (end-to-end)
-
-For you to access your EC2 from your browser you need to check if your:
-
-* EC2 has public IP ✅
-* Subnet has route to IGW ✅
-* IGW attached to VPC ✅
-* Security Group allows traffic (e.g., port 80) ✅
-
-## Challenges Faced
-
-“My instance has a public IP but I still can’t access it”
-
-Solution:
-
-* No IGW route ❌
-* OR security group blocking ❌
-
-## Lesson Learned
-
-* Private subnets can still access the internet using:
-NAT Gateway (outbound only)
+- Used public EC2 as a bastion host
+- SSH from public → private instance using private IP
 
 ## ScreenSchots
 
