@@ -37,6 +37,18 @@ This repository is organized into:
 
 Currently in Week 1 – Foundations (Linux, Networking, AWS Core Services)
 
+## Engineering Approach
+
+I focus on:
+
+* Designing secure and scalable cloud architectures
+
+* Understanding networking and system interactions deeply
+
+* Troubleshooting real-world cloud issues
+
+* Documenting both successes and failures
+
 ---
 
 I’m actively learning and open to Cloud/DevOps opportunities.

@@ -40,6 +40,34 @@ Initial confusion accessing private instance directly
 
 * SSH from public → private instance using private IP
 
+## Security Considerations
+
+* Restricted SSH access via bastion host only
+
+* Private instances not exposed to the internet
+
+* Principle of least privilege (to be implemented with IAM)
+
+## Future Improvements
+
+* Add NAT Gateway for outbound internet access
+
+* Use Terraform for infrastructure provisioning
+
+* Implement IAM roles instead of key-based access
+
+## Commands Used
+
+```bash
+ssh -i key.pem ec2-user@public-ip
+ssh -i key.pem ec2-user@private-ip
+```
+
+```bash
+sudo yum install nginx -y
+sudo systemctl start nginx
+```
+
 ## ScreenSchots
 
 ![VPC A CIDR Setup](/images/day-2-imgs/vpc-a-cidr-block.JPG)
