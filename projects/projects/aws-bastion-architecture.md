@@ -10,7 +10,7 @@ How do we securely access private servers without exposing them to the internet?
 
 ## Architecture
 
-![AWS Bastion Diagram](/diagrams/bastion-architecture.png/AWS%20Bastion.drawio.svg)
+![AWS Bastion Diagram](/diagrams/bastion-architecture.png/aws-bastion/AWS%20Bastion.drawio.svg)
 
 ## Implementation Steps
 
@@ -28,7 +28,7 @@ How do we securely access private servers without exposing them to the internet?
 
 ## Key Learning
 
-Even if a security group allows traffic, without a route to an Internet Gateway and a public IP, the instance is not reachable from the internet.
+Even if a security group allows traffic, without a route to an Internet Gateway and a public IP, the instance is not  reachable from the internet.
 
 ## Challenge Faced
 
@@ -68,7 +68,7 @@ sudo yum install nginx -y
 sudo systemctl start nginx
 ```
 
-## ScreenSchots
+## ScreenShots
 
 ![VPC A CIDR Setup](/images/day-2-imgs/vpc-a-cidr-block.JPG)
 
