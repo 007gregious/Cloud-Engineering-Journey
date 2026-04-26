@@ -122,7 +122,7 @@ However, misconfigurations (especially public access) can lead to:
 
 ## Commands Used
 
-```bash id="v2k3rh"
+```bash
 # List S3 buckets
 aws s3 ls
 
