@@ -72,6 +72,10 @@ http://<your-ec2-public-ip>
 docker ps
 ```
 
+## Why Docker Was Used
+
+Docker ensures application consistency across environments by packaging dependencies and configurations into a single container image.
+
 ## Key Learning
 
 - Containers package apps + dependencies together
@@ -112,15 +116,11 @@ docker ps
 
 ## Future Improvements
 
-- Create a custom Dockerfile
-
-- Deploy a custom web application
+- Push image to Docker Hub
 
 - Use Docker Compose for multi-container apps
 
-- Push images to Docker Hub
-
-- Integrate with CI/CD pipelines
+- Deploy container to AWS ECS
 
 ## Commands Used
 
@@ -139,6 +139,14 @@ sudo docker run -d -p 80:80 nginx
 
 # List running containers
 docker ps
+
+# Dockerfile
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/index.html
+
+#Docker Build
+docker build -t custom-nginx .
+docker run -d -p 80:80 custom-nginx
 ```
 
 ## Screenshots
