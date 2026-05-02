@@ -100,6 +100,10 @@ terraform apply
 
 - Practiced Terraform lifecycle commands repeatedly
 
+## Why Terraform Was Used
+
+Manual infrastructure creation is error-prone and difficult to replicate. Terraform ensures consistency, enables version control, and allows infrastructure to be treated as code.
+
 ## Security Considerations
 
 - Avoid hardcoding sensitive data (use variables or secrets management)
@@ -112,15 +116,11 @@ terraform apply
 
 ## Future Improvements
 
-- Add Security Group configuration
+- Use remote backend (S3 + DynamoDB)
 
-- Introduce variables for reusability
+- Modularize Terraform code
 
-- Use Terraform modules
-
-- Store state in remote backend (S3)
-
-- Implement CI/CD for infrastructure deployment
+- Add auto-scaling configuration
 
 ## Commands Used
 
