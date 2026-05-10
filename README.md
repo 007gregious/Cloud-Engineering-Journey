@@ -4,6 +4,12 @@ Welcome to my Cloud Engineering learning journey.
 
 I recently completed my Cloud Engineering program at AltSchool Africa and I’m currently building real-world, hands-on projects to strengthen my skills in AWS, DevOps, and Infrastructure as Code.
 
+## About Me
+
+I’m an aspiring Cloud/DevOps Engineer with hands-on experience building and troubleshooting AWS-based infrastructure using Terraform, Docker, Kubernetes, and CI/CD pipelines.
+
+I focus on practical cloud engineering, automation, observability, and infrastructure security while documenting my learning journey through real-world projects and labs.
+
 ## Goals
 
 - Become a job-ready Cloud/DevOps Engineer
