@@ -2,52 +2,84 @@
 
 Welcome to my Cloud Engineering learning journey.
 
-I recently completed my Cloud Engineering program at AltSchool Africa and I'm currently building real-world, hands-on projects to strengthen my skills in AWS, DevOps, and Infrastructure as Code.
+I recently completed my Cloud Engineering program at AltSchool Africa and I’m currently building real-world, hands-on projects to strengthen my skills in AWS, DevOps, and Infrastructure as Code.
 
 ## Goals
 
-* Become a job-ready Cloud/DevOps Engineer
-* Build and document real-world cloud architectures
-* Master AWS core services, Terraform, and CI/CD pipelines
+- Become a job-ready Cloud/DevOps Engineer
+- Build and document real-world cloud architectures
+- Master AWS core services, Terraform, and CI/CD pipelines
 
 ## Tools & Technologies
 
-* AWS (EC2, S3, VPC, IAM)
-* Linux
-* Git & GitHub
-* Nginx
-* Terraform (in progress)
-* Docker (upcoming)
+- AWS (EC2, S3, VPC, IAM, ECS, CloudWatch)
+- Linux
+- Git & GitHub
+- Nginx
+- Docker
+- Kubernetes
+- Terraform (in progress)
 
-## Journey Structure
+## Repository Structure (Updated)
 
-This repository is organized into:
+The repository currently follows this structure:
 
-* Daily hands-on labs
-* Real-world projects
-* Architecture diagrams
-* Lessons learned and challenges faced
+```text
+.
+├── README.md
+├── projects/
+│   └── projects/
+│       ├── aws-bastion-architecture.md
+│       ├── aws-iam.md
+│       ├── ci-cd-pipeline.md
+│       ├── docker-nginx.md
+│       ├── ec2-nginx.md
+│       ├── ecs-nginx-deployment.md
+│       ├── infra-as-code.md
+│       ├── kubernetes-nginx.md
+│       ├── monitoring-with-cloud-watch.md
+│       ├── s3-static-website.md
+│       └── troubleshooting-labs.md
+├── diagrams/
+│   ├── aws-iam/
+│   ├── bastion-architecture.png/aws-bastion/
+│   ├── cloud-watch/
+│   ├── containers/
+│   ├── kubernetes-nginx/
+│   └── s3-static-site/
+└── images/
+    ├── day-1-imgs/
+    ├── day-2-imgs/
+    ├── day-3-imgs/
+    ├── day4-imgs/
+    ├── day-5-imgs/
+    ├── day-7-imgs/
+    ├── day-8-imgs/
+    └── day-9-imgs/
+```
 
-## Highlight Projects
+## Projects Documented
 
-* Nginx Deployment on EC2
-* VPC with Public & Private Subnets (Bastion Architecture)
-
-## Progress
-
-Currently in Week 1 – Foundations (Linux, Networking, AWS Core Services)
+- EC2 + Nginx deployment
+- VPC Bastion Architecture
+- AWS IAM setup and access management
+- S3 static website hosting
+- ECS Nginx deployment
+- Docker + Nginx
+- Kubernetes + Nginx
+- CloudWatch monitoring
+- CI/CD pipeline practice
+- Infrastructure as Code notes
+- Troubleshooting labs
 
 ## Engineering Approach
 
 I focus on:
 
-* Designing secure and scalable cloud architectures
-
-* Understanding networking and system interactions deeply
-
-* Troubleshooting real-world cloud issues
-
-* Documenting both successes and failures
+- Designing secure and scalable cloud architectures
+- Understanding networking and system interactions deeply
+- Troubleshooting real-world cloud issues
+- Documenting both successes and failures
 
 ---
 
