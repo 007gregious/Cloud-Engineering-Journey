@@ -4,10 +4,20 @@
 ## Table of Contents
 
 - [Architecture Overview](#architecture-overview)
+
 - [ECS vs EC2 — Why ECS?](#ecs-vs-ec2--why-ecs)
+
 - [Why Private Subnet Matters](#why-private-subnet-matters)
+
 - [Why Terraform Was Used](#why-terraform-was-used)
+
 - [Security Considerations](#security-considerations)
+
+- [Scalability Considerations](#scalability-considerations)
+
+- [Failure Handling](#failure-handling)
+
+- [Tradeoffs Considered](#tradeoffs-considered)
 
 ---
 
@@ -236,3 +246,13 @@ No `*` actions. No `AdministratorAccess`. The role cannot create other roles, ac
 - Infrastructure as Code
 
 - Container orchestration
+
+## Tradeoffs Considered
+
+- ECS chosen for simplicity over Kubernetes complexity
+
+- Terraform used for reproducibility
+
+- Bastion host improves security but adds operational overhead
+
+---
