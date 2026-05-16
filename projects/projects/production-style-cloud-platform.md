@@ -37,8 +37,6 @@ Developer → GitHub Repo → GitHub Actions → Amazon ECR
          IAM Role · CloudWatch
 ```
 
-## Architecture
-
 ![AWS Production Style cloud Platform Diagram](/diagrams/production-style-cloud-platform/production-style-cloud-platform.drawio.png)
 
 ---
