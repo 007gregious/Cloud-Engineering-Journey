@@ -58,8 +58,11 @@ The application is packaged as a Docker container, which makes ECS the natural f
 **Key reasons for ECS in this architecture:**
 
 - **Containerised workload** — the nginx app is already Dockerized, so ECS is the direct runtime for it rather than running Docker manually on EC2.
+
 - **Simpler deployments** — GitHub Actions pushes a new image to ECR; ECS picks it up and replaces the running task with zero manual SSH access needed.
+
 - **Easier scaling** — traffic spikes are handled by scaling ECS tasks horizontally, not by resizing EC2 instances.
+
 - **Less patching** — with Fargate launch type, there is no underlying EC2 OS to patch or maintain.
 
 > **When EC2 would be the better choice:** workloads that need persistent local storage, require specific kernel configurations, or run software that cannot be containerised.
@@ -201,3 +204,35 @@ No `*` actions. No `AdministratorAccess`. The role cannot create other roles, ac
 - The GitHub Actions pipeline runs a vulnerability scan (e.g. Trivy or AWS Inspector) against the image before pushing to ECR.
 
 - ECR has **image scanning on push** enabled. Images with critical CVEs are flagged before deployment.
+
+## Scalability Considerations
+
+- ECS/Kubernetes can scale containers horizontally
+
+- Infrastructure can be recreated consistently using Terraform
+
+- Load balancing improves traffic distribution
+
+- Monitoring supports proactive scaling decisions
+
+## Failure Handling
+
+**Potential failure scenarios considered:**
+
+- EC2/container crash
+
+- High CPU utilization
+
+- Misconfigured security groups
+
+- Failed deployments
+
+**Mitigation strategies include:**
+
+- CloudWatch alarms
+
+- Auto-recovery mechanisms
+
+- Infrastructure as Code
+
+- Container orchestration
