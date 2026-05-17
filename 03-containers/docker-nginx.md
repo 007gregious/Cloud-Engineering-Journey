@@ -24,7 +24,7 @@ I used **Docker containers** to:
 
 ## Architecture
 
-![AWS Containers Architecture Diagram](/diagrams/containers/containers.drawio.png)
+![AWS Containers Architecture Diagram](/03-containers/containers/containers.drawio.png)
 
 - Docker runs containers on EC2  
 

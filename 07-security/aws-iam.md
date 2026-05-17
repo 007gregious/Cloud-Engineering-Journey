@@ -26,7 +26,7 @@ Additionally:
 
 ## Architecture
 
-![AWS IAM Diagram](/diagrams/aws-iam/aws-iam.drawio.png)
+![AWS IAM Diagram](/07-security/aws-iam/aws-iam.drawio.png)
 
 - IAM User → used for login and management  
 

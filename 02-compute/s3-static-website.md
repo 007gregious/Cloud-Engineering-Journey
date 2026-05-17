@@ -28,7 +28,7 @@ However, misconfigurations (especially public access) can lead to:
 
 ## Architecture
 
-![AWS Static Site](/diagrams/s3-static-site/aws-static-site.drawio.png)
+![AWS Static Site](/02-compute/s3-static-site/aws-static-site.drawio.png)
 
 - S3 acts as a **web server for static files**
 

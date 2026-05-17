@@ -26,10 +26,12 @@ Used **Amazon CloudWatch** to:
 
 ## Architecture
 
-![Cloud Watch Architecture Diagram](/diagrams/cloud-watch/cloud-watch.drawio.png)
+![Cloud Watch Architecture Diagram](/06-monitoring/cloud-watch/cloud-watch.drawio.png)
 
 - Metrics → quantitative data (CPU, memory, etc.)  
+
 - Logs → detailed event records  
+
 - Alarms → trigger notifications based on thresholds  
 
 ## Implementation Steps

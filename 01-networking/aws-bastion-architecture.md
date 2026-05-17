@@ -10,7 +10,7 @@ How do we securely access private servers without exposing them to the internet?
 
 ## Architecture
 
-![AWS Bastion Diagram](/diagrams/bastion-architecture.png/aws-bastion/AWS%20Bastion.drawio.svg)
+![AWS Bastion Diagram](/01-networking/bastion-architecture.png/aws-bastion/AWS%20Bastion.drawio.svg)
 
 ## Implementation Steps
 

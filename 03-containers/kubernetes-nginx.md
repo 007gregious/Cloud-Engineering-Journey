@@ -34,7 +34,7 @@ Kubernetes helps with:
 
 ## Architecture
 
-![Kubernetes Architectural Diagram](/diagrams/kubernetes-nginx/kubernetes-nginx.drawio.png)
+![Kubernetes Architectural Diagram](/03-containers/kubernetes-nginx/kubernetes-nginx.drawio.png)
 
 ### Components
 
@@ -102,11 +102,11 @@ kubectl get deployments
 
 - Broke Kubernetes into smaller concepts:
 
-  - Pod → runs containers
+  - **Pod** → runs containers
 
-  - Deployment → manages Pods
+  - **Deployment** → manages Pods
 
-  - Service → exposes Pods/network access
+  - **Service** → exposes Pods/network access
 
 - Used kubectl get commands repeatedly to visualize resources
 
