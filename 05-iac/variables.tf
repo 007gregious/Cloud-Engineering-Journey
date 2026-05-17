@@ -9,3 +9,8 @@ variable "project_name" {
   type        = string
   default     = "cloud-journey"
 }
+
+variable "admin_ip" {
+  description = "Your public IP address for Bastion SSH access (format: x.x.x.x/32)"
+  type        = string
+}

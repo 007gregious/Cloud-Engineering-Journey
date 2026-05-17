@@ -51,3 +51,15 @@ resource "aws_internet_gateway" "main" {
     Name = "${var.project_name}-igw"
   }
 }
+
+# Second public subnet in a different AZ (required by ALB)
+resource "aws_subnet" "public_b" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = "10.0.3.0/24"
+  availability_zone       = "${var.aws_region}b"
+  map_public_ip_on_launch = true
+
+  tags = {
+    Name = "${var.project_name}-public-subnet-b"
+  }
+}
