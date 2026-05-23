@@ -60,7 +60,7 @@ Developer → GitHub Repo → GitHub Actions → Amazon ECR
 ## 📊 Progress Tracker
 
 - [x] Phase 1 — Repo structure + real code files
-- [ ] Phase 2 — Complete Terraform (full ECS + ALB + security groups)
+- [x] Phase 2 — Complete Terraform (full ECS + ALB + security groups)
 - [ ] Phase 3 — Capstone end-to-end pipeline
 - [ ] Phase 4 — AWS Cloud Practitioner certification
 - [ ] Phase 5 — AWS Solutions Architect Associate
