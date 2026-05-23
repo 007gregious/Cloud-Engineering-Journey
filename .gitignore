@@ -1,0 +1,11 @@
+# Local variable values — never commit
+terraform.tfvars
+
+# Terraform state — contains sensitive data
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
