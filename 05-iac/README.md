@@ -59,4 +59,3 @@ terraform plan
 
 > Note: `terraform.tfvars` is excluded from version control.
 > Copy `terraform.tfvars.example` and fill in your values.
-EOF
